@@ -6,6 +6,7 @@ node
   }
   stage ('Compile-Package')
   {
-    sh 'mvn package'
+    def mvnHome = tool name: 'TestJenkinsMaven', type: 'maven'
+    sh "${mvnHome}/bin/mvn package"
   }
 }
