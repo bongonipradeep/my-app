@@ -2,7 +2,7 @@ node
 {
   stage ('SCM-Checkout')
   {
-    git 'https://github.com/ramdevops03/maven-build'
+    git 'https://github.com/ramdevops03/Development-Team-Repo.git'
   }
   stage ('Compile-Package')
   {
