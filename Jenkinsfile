@@ -7,6 +7,7 @@ node
   stage ('Compile-Package')
   {
     def mvnHome = tool name: 'TestJenkinsMaven', type: 'maven'
+    sh "${mvnHome}/bin/mvn clean"
     sh "${mvnHome}/bin/mvn package"
   }
   stage ('Deploy')
