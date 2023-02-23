@@ -11,7 +11,7 @@ node
   }
   stage ('Deploy')
   {
+    sh "ls -lrt"
     sh "sudo cp web.war /root/apache-tomcat-8.5.85/webapps"
-    
   }
 }
