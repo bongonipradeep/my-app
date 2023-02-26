@@ -22,6 +22,6 @@ node
   {
     sh "ls -lrt"
     sh "sudo rm -rf /root/apache-tomcat-8.5.85/webapps/web.war"
-    sh "wget http://54.89.202.254:8081/nexus/content/repositories/releases/project/web/2.5/web-2.5.war -P /root/apache-tomcat-8.5.85/webapps"
+    sh "sudo wget http://54.89.202.254:8081/nexus/content/repositories/releases/project/web/2.5/web-2.5.war -P /root/apache-tomcat-8.5.85/webapps"
   }
 }
