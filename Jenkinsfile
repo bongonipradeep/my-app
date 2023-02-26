@@ -14,7 +14,7 @@ node
     
   stage ('nexus upload')
   {
-    sh "nexusArtifactUploader artifacts: [[artifactId: 'web', classifier: '', file: 'target/web.war', type: 'war']], credentialsId: '55a80184-88c6-4b21-989d-32079a15e09b', groupId: 'project', nexusUrl: '54.89.202.254:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'releases', version: '2.3'"
+    nexusArtifactUploader artifacts: [[artifactId: 'web', classifier: '', file: 'target/web.war', type: 'war']], credentialsId: '55a80184-88c6-4b21-989d-32079a15e09b', groupId: 'project', nexusUrl: '54.89.202.254:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'releases', version: '2.3'
 
   }
   
