@@ -24,4 +24,13 @@ node
     sh "sudo rm -rf /root/apache-tomcat-8.5.85/webapps/web.war"
     sh "sudo wget http://54.89.202.254:8081/nexus/content/repositories/releases/project/web/2.7/web-2.7.war -P /root/apache-tomcat-8.5.85/webapps"
   }
+  
+  post{
+        always{
+            mail to: "pradeepb24@gmail.com",
+            subject: "Test Email",
+            body: "Test"
+        }
+    }
+  
 }
