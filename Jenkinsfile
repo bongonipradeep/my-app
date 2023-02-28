@@ -25,12 +25,6 @@ node
     sh "sudo wget http://54.89.202.254:8081/nexus/content/repositories/releases/project/web/2.7/web-2.7.war -P /root/apache-tomcat-8.5.85/webapps"
   }
   
-  post{
-        always{
-            mail to: "pradeepb24@gmail.com",
-            subject: "Test Email",
-            body: "Test"
-        }
-    }
+  
   
 }
